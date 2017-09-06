@@ -53,8 +53,8 @@ module.exports = {
         })
       },
       { test: /\.css$/, use: ["style-loader", "css-loader"] },
-      { test: /\.png/,  use: ["file-loader?name=../images/[name].[ext]"] },
-      { test: /\.jpg/,  use: ["file-loader?name=../images/[name].[ext]"] },
+      { test: /\.png/,  use: ["file-loader?name=/images/[name].[ext]"] },
+      { test: /\.jpg/,  use: ["file-loader?name=/images/[name].[ext]"] },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: "url-loader?limit=10000&mimetype=application/font-woff"

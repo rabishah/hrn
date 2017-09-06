@@ -1,8 +1,14 @@
 .App {
   &__Header {
     background-color: #222;
-    padding: 15px 20px;
     color: white;
+    box-shadow: 0px 1px 1px #d8d8d8;
+  }
+
+  &__Menu {
+    background-color: #f8f8f8;
+    color: #bbbbbb;
+    padding: 30px;
   }
 
   &__Footer {
@@ -14,22 +20,189 @@
     left: 0;
     padding: 1rem;
     text-align: center;
+
+    &__Links {
+      font-size: 10px;
+
+      & li {
+        margin-left: 5px;
+      }
+      & li:after {
+        content: "|";
+        padding-left: 5px;
+      }
+      & li:last-child:after {
+        content: '';
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__Logo {
+    width: 200px;
+    padding: 15px 20px;
   }
 }
 
 .Menu {
-  &__Logo {
-    width: 175px;
-  }
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  text-transform: uppercase;
 
-  &__SubMenu {
-    display: flex;
-    justify-content: center;
-  }
+  i { margin-right: 10px; }
+}
+
+.Logo {
+  width: 175px;
+  margin: auto;
 }
 
 .Card {
+  position: relative;
+  margin-right: 10px;
+  border: 1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  padding: 20px;
+  text-align: center;
+  height: 450px;
+
+  &__Title, &__Price, &__Validity { color: #26ade2 }
+  &__Title {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+  &__Discount {
+    color: #c8c8c8;
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  &__Validity {
+    margin: 0;
+  }
   &__Wrapper {
     display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
   }
+
+  &__Benefits {
+    font-size: 14px;
+    list-style: none;
+    text-align: left;
+    margin-left: 25px;
+    padding: 0;
+    margin: 0;
+  }
+  &__Benefits li {
+    padding-left: 1em;
+    text-indent: -.7em;
+    margin-bottom: 0.5em;
+  }
+  &__Benefits li::before {
+    content: "• ";
+    color: #18a8e1;
+  }
+
+  &__Button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+  }
+}
+
+.Description {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  color: #2c292a;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.opacity-50 { opacity: 0.5; }
+strong { font-weight: bold; }
+
+.Spacing {
+  &__80 { margin-bottom: 80px; }
+  &__50 { margin-bottom: 50px; }
+  &__40 { margin-bottom: 40px; }
+  &__30 { margin-bottom: 30px; }
+  &__20 { margin-bottom: 20px; }
+  &__10 { margin-bottom: 10px; }
+}
+
+h1 { font-weight: bold; }
+
+.Button {
+  border: 1px solid;
+  box-sizing: border-box;
+  height: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  background-color: #fff;
+  color: #18a8e1;
+  padding: 5px 20px;
+
+  &--Card {
+    color: #fff;
+    background-color: #3498db;
+    border-color: #3498db;
+    width: 100%;
+  }
+
+  &--Card:hover {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+  }
+}
+
+.Benefits {
+  text-align: center;
+}
+
+.Partners {
+  text-align: center;
+  img { height: 100px; }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 30px;
+
+  li { margin-right: 15px; }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 30px;
+
+  li { margin-right: 20px; }
+}
+
+.inline, .inline li {
+  display: inline-block;
 }
