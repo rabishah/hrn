@@ -66,7 +66,9 @@
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   padding: 20px;
   text-align: center;
-  height: 450px;
+  height: 470px;
+  cursor: pointer;
+  transition: margin 300ms linear 0ms;
 
   &__Title, &__Price, &__Validity { color: #26ade2 }
   &__Title {
@@ -88,6 +90,7 @@
     width: 80%;
     margin: auto;
     justify-content: space-between;
+    min-height: 500px;
   }
 
   &__Benefits {
@@ -115,6 +118,9 @@
     width: 100%;
   }
 }
+.Card:hover {
+  margin-top: -25px;
+};
 
 .Description {
   text-align: center;
