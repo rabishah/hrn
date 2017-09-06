@@ -13,14 +13,14 @@ import IconGroup from './components/IconGroup.js';
 const Timeline = [
   <div>
     <span>Early Bird</span>
-    <span>Sold Out</span>
+    <span className="highlight">Sold Out</span>
   </div>,
-  <div>
+  <div className="summer-saver">
     <span><strong>Summer Saver</strong></span>
-    <i className=""></i>
-    <span>
-      <span>Until</span>
-      <span>Aug.31</span>
+    <i className="fa fa-clock-o clock"></i>
+    <span className="deadline">
+      <span className="black">Until</span>
+      <span className="red">Aug.31</span>
     </span>
   </div>,
   <div>Regular</div>,
@@ -45,7 +45,7 @@ class App extends Component {
           <div className="App__Logo" dangerouslySetInnerHTML={{__html: iMenuLogoSVG}} />
           <div className="App__Menu">
             <ul className="Menu">
-              <li><IconGroup icon="fa fa-user" title="Single Attandee" /></li>
+              <li className="blue"><IconGroup icon="fa fa-user" title="Single Attandee" /></li>
               <li><IconGroup icon="fa fa-users" title="Group Tickets" /></li>
               <li><IconGroup icon="fa fa-bullseye" title="Investors" /></li>
               <li><IconGroup icon="fa fa-lightbulb-o" title="Startups" /></li>

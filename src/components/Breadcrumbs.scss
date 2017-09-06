@@ -5,6 +5,7 @@
 
   &__List {
     display: flex;
+    text-transform: uppercase;
   }
 
   // hide last splitter
@@ -15,5 +16,10 @@
 
 .splitter {
   padding: 0 10px;
+  &--selected {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: -5px;
+  }
 }
 

@@ -7,7 +7,8 @@ function Splitter(s) {
   console.log('selected', s.selected);
   const sClass = cx({
     'splitter': true,
-    'opacity-50': !s.selected
+    'opacity-50': !s.selected,
+    'splitter--selected': s.selected
   });
 
   return (
