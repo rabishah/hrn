@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from './Button.js';
 
 class Card extends Component {
   render() {
@@ -9,13 +10,17 @@ class Card extends Component {
     ))
 
     return (
-      <div>
+      <div className="Card">
         {popular ? <div>Most Popular</div> : null}
-        <h2>{name}</h2>
-        <h1>{price}</h1>
-        {discount ? <div>{discount}</div> : null}
-        <h3>{validity}</h3>
-        <ul>{$benefits}</ul>
+        <h4 className="Card__Title">{name}</h4>
+        <h1 className="Card__Price">{price}</h1>
+        {discount ? <h6 className="Card__Discount">{discount}</h6> : null}
+        <h5 className="Card__Validity">{validity}</h5>
+        <div className="Spacing__30"></div>
+        <ul className="Card__Benefits">{$benefits}</ul>
+        <div className="Card__Button">
+          <Button type="card">Book Now</Button>
+        </div>
       </div>
     )
   }
