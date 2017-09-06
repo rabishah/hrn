@@ -1,0 +1,28 @@
+.App {
+  &__Header {
+    background-color: #222;
+    padding: 15px 20px;
+    color: white;
+  }
+
+  &__Footer {
+    background-color: #eee;
+  }
+}
+
+.Menu {
+  &__Logo {
+    width: 175px;
+  }
+
+  &__SubMenu {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.Card {
+  &__Wrapper {
+    display: flex;
+  }
+}
