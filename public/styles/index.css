@@ -1,2 +1,25 @@
+.App__Header {
+  background-color: #222;
+  padding: 15px 20px;
+  color: white; }
+
+.App__Footer {
+  background-color: #eee; }
+
+.Menu__Logo {
+  width: 175px; }
+
+.Menu__SubMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.Card__Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 /*# sourceMappingURL=index.css.map*/
