@@ -1,0 +1,19 @@
+.Breadcrumbs {
+  display: flex;
+  justify-content: center;
+  color: #18a8e1;
+
+  &__List {
+    display: flex;
+  }
+
+  // hide last splitter
+  li:last-child span {
+    display: none;
+  }
+}
+
+.splitter {
+  padding: 0 10px;
+}
+
