@@ -4,7 +4,6 @@ import cx from 'classnames';
 import './Breadcrumbs.scss';
 
 function Splitter(s) {
-  console.log('selected', s.selected);
   const sClass = cx({
     'splitter': true,
     'opacity-50': !s.selected,
