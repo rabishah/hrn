@@ -1,0 +1,19 @@
+.Flex {
+  display: flex;
+
+  &--Center {
+    justify-content: center;
+  }
+
+  &--Wrap {
+    flex-wrap: wrap;
+  }
+
+  &--Space-Evenly {
+    justify-content: space-evenly;
+  }
+
+  &--Space-Between {
+    justify-content: space-between;
+  }
+}
